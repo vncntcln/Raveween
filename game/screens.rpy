@@ -285,6 +285,8 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
+# Define a global variable to control visibility
+
 screen navigation():
 
     vbox:
@@ -312,7 +314,7 @@ screen navigation():
         textbutton _("Load") action ShowMenu("load")
 
         textbutton _("Options") action ShowMenu("preferences")
-
+        
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
@@ -321,7 +323,7 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        #textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -358,6 +360,11 @@ screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
     tag menu
+
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 20
 
     add gui.main_menu_background
 
@@ -559,9 +566,9 @@ screen about():
     use game_menu(_("About"), scroll="viewport"):
 
         style_prefix "about"
-
+        
         vbox:
-
+        
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
 

@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 72: expected statement.
+    o “You get sidetracked really easily, Poliana! I’ve have no idea as to who is playing right now, I forgot to check the timetable before coming here, but I believe it should be either DJ Lau or DJ Elk by the way the beat is progressing”
+                                        ^
+
+Ren'Py Version: Ren'Py 8.3.0.24082114
+Sat Sep  7 02:06:47 2024
