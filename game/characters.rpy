@@ -1,0 +1,5 @@
+define char_poliana = Character("Poliana", color="#FF885B")
+define char_onyx = Character("Onyx", color="#1d6ce2")
+define char_aj = Character("Ajax", color="#22bba7")
+define char_am = Character("Amalia", color="#881838")
+define char_polianaamalia = Character("Poliana & Amalia")
