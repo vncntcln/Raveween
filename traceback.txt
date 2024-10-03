@@ -1,28 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script call
-    call s1p1
-  File "game/script.rpy", line 109, in script
-    a "Well, I hope to meet with some old acquaintances and eat some good dinner here soon, the munchies are killing me!"
-Exception: Sayer 'a' is not defined.
+  File "game/script.rpy", line 11, in script call
+    call a1s1
+  File "game/story/Scene01.rpy", line 9, in script
+    show img_poliana at left3
+  File "game/story/Scene01.rpy", line 9, in <module>
+    show img_poliana at left3
+NameError: name 'left3' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 30, in script call
-    call s1p1
-  File "game/script.rpy", line 109, in script
-    a "Well, I hope to meet with some old acquaintances and eat some good dinner here soon, the munchies are killing me!"
-  File "D:\Renpy\renpy-8.3.0-sdk\renpy\ast.py", line 2572, in execute
-    Say.execute(self)
-  File "D:\Renpy\renpy-8.3.0-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\Renpy\renpy-8.3.0-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'a' is not defined.
+  File "game/script.rpy", line 11, in script call
+    call a1s1
+  File "game/story/Scene01.rpy", line 9, in script
+    show img_poliana at left3
+  File "D:\Renpy\renpy-8.3.0-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\Renpy\renpy-8.3.0-sdk\renpy\ast.py", line 1070, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\Renpy\renpy-8.3.0-sdk\renpy\ast.py", line 1070, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\Renpy\renpy-8.3.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Renpy\renpy-8.3.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/story/Scene01.rpy", line 9, in <module>
+    show img_poliana at left3
+NameError: name 'left3' is not defined
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.0.24082114
 RaveWeen 1.0
-Sat Sep  7 02:17:56 2024
+Mon Sep 30 00:50:42 2024

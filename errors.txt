@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 72: expected statement.
-    o “You get sidetracked really easily, Poliana! I’ve have no idea as to who is playing right now, I forgot to check the timetable before coming here, but I believe it should be either DJ Lau or DJ Elk by the way the beat is progressing”
-                                        ^
+File "game/story/Introduction.rpy", line 5: play requires a channel
+    play "(opening) a night to remember.mp3"
+         ^
 
 Ren'Py Version: Ren'Py 8.3.0.24082114
-Sat Sep  7 02:06:47 2024
+Mon Sep 30 03:28:44 2024
